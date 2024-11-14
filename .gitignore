@@ -1,0 +1,25 @@
+# Flutter/Dart/Pub related
+.packages
+build/
+.idea/
+.vscode/
+*.iml
+
+# IntelliJ related
+*.ipr
+*.iws
+*.iml
+.idea/
+
+# VS Code related
+.vscode/
+
+# MacOS related
+.DS_Store
+
+# Others
+*.log
+*.lock
+*.pyc
+*.pyo
+*.swp

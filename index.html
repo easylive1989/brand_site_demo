@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC 公司</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+</head>
+<body>
+  <header class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold">ABC 公司</div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="hover:text-gray-300">主頁</a></li>
+          <li><a href="#about" class="hover:text-gray-300">關於我們</a></li>
+          <li><a href="#news" class="hover:text-gray-300">最新消息</a></li>
+          <li><a href="#solutions" class="hover:text-gray-300">解決方案</a></li>
+          <li><a href="#contact" class="hover:text-gray-300">聯絡我們</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="py-16 bg-gray-100">
+      <div class="container mx-auto">
+        <h1 class="text-4xl font-bold mb-4">歡迎來到 ABC 公司</h1>
+        <p class="text-gray-600 mb-8">我們是一家專注於提供高品質解決方案的公司。</p>
+        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">了解更多</a>
+      </div>
+    </section>
+
+    <section id="about" class="py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-4">關於我們</h2>
+        <p class="text-gray-600 mb-8">ABC 公司成立於 2010 年,致力於為客戶提供卓越的服務和解決方案。我們擁有一支富有經驗的團隊,不斷創新以滿足客戶的需求。</p>
+        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">了解更多</a>
+      </div>
+    </section>
+
+    <section id="news" class="py-16 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-4">最新消息</h2>
+        <div class="grid grid-cols-3 gap-8">
+          <div>
+            <img src="/api/placeholder/400/200" alt="News 1" class="mb-4">
+            <h3 class="text-xl font-bold mb-2">新產品發佈</h3>
+            <p class="text-gray-600">我們很高興宣佈新產品的推出,它將為客戶帶來更多的價值。</p>
+          </div>
+          <div>
+            <img src="/api/placeholder/400/200" alt="News 2" class="mb-4">
+            <h3 class="text-xl font-bold mb-2">公司獲得大獎</h3>
+            <p class="text-gray-600">我們很自豪地宣佈公司獲得了行業內的重要獎項。</p>
+          </div>
+          <div>
+            <img src="/api/placeholder/400/200" alt="News 3" class="mb-4">
+            <h3 class="text-xl font-bold mb-2">新合作夥伴</h3>
+            <p class="text-gray-600">我們很高興宣佈與一家領先企業建立了新的合作關係。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions" class="py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-4">解決方案</h2>
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-2">解決方案 A</h3>
+            <p class="text-gray-600 mb-4">我們提供完整的解決方案 A,幫助客戶解決特定的問題。</p>
+            <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">了解更多</a>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">解決方案 B</h3>
+            <p class="text-gray-600 mb-4">我們提供完整的解決方案 B,幫助客戶實現更高的效率。</p>
+            <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">了解更多</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-4">聯絡我們</h2>
+        <form class="max-w-md mx-auto">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-bold mb-2">姓名</label>
+            <input type="text" id="name" name="name" class="border border-gray-400 p-2 w-full" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-bold mb-2">電子郵件</label>
+            <input type="email" id="email" name="email" class="border border-gray-400 p-2 w-full" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-bold mb-2">留言</label>
+            <textarea id="message" name="message" rows="4" class="border border-gray-400 p-2 w-full" required></textarea>
+          </div>
+          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">提交</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      &copy; 2023 ABC 公司. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
