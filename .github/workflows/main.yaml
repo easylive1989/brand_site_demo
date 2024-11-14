@@ -3,6 +3,13 @@ name: flutter_breakout
 on: [pull_request, push]
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: .
   deploy:
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
